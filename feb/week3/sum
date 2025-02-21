@@ -1,0 +1,12 @@
+
+read a b
+result=` expr $a + $b `
+echo "Result: $result"
+
+output:
+
+[mca@localhost ~]$ vi calculate.sh
+[mca@localhost ~]$ chmod +x calculate.sh
+[mca@localhost ~]$ ./calculate.sh
+2 3
+Result: 5
