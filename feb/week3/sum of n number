@@ -1,0 +1,36 @@
+echo "Enter Size: "
+read N
+
+i=1
+sum=0
+
+echo "Enter Numbers"
+while [ $i -le $N ]
+do
+  read num           #get number
+  sum=$((sum + num)) #sum+=num
+  i=$((i + 1))
+done
+
+echo $sum
+
+
+
+
+
+output:-
+
+
+[mca@localhost ~]$ vi sumofnum.sh
+[mca@localhost ~]$ #!/bin/bash
+[mca@localhost ~]$ chmod +x sumofnum.sh
+[mca@localhost ~]$ ./sumofnum.sh
+Enter Size: 
+5
+Enter Numbers
+2
+3
+1
+7
+5
+18
