@@ -12,7 +12,8 @@ do
   i=$((i + 1))
 done
 
-echo $sum
+echo "sum= " $sum
+
 
 
 
@@ -28,9 +29,10 @@ output:-
 Enter Size: 
 5
 Enter Numbers
+7
+1
 2
 3
-1
-7
-5
-18
+4
+sum=  17
+
