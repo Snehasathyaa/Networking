@@ -1,0 +1,25 @@
+echo "Enter a number"
+read num
+
+fact=1
+
+for((i=2;i<=num;i++))
+{
+  fact=$((fact * i))  #fact = fact * i
+}
+
+echo "factorial of " $num "is" $fact
+
+--------------------------------------------------------------------------------------------------------
+
+output: 
+
+[mca@localhost ~]$ vi forfact.sh
+[mca@localhost ~]$ #!/bin/bash
+[mca@localhost ~]$ chmod +x forfact.sh
+[mca@localhost ~]$ ./forfact.sh
+Enter a number
+4
+factorial of  4 is 24
+
+
