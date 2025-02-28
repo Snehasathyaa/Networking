@@ -1,0 +1,43 @@
+for fname in *
+do
+        echo $fname
+done
+
+
+-----------------------------------------------------------------------------------------------------
+
+output:
+
+
+[mca@localhost ~]$ vi directory.sh
+[mca@localhost ~]$ #!/bin/bash
+[mca@localhost ~]$ chmod +x directory.sh
+[mca@localhost ~]$ ./directory.sh
+abc.txt
+capital
+clg
+Desktop
+directory.sh
+Documents
+Downloads
+fac.sh
+factorial.sh
+fact.sh
+forfact.sh
+forsum.sh
+hello.sh
+mca
+mes
+mnp.txt
+Music
+notes
+num.sh
+Pictures
+Public
+s2mca
+sample.sh
+sumofnum.sh
+sum.sh
+Templates
+Videos
+while.sh
