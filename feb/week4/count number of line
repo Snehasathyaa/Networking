@@ -1,0 +1,15 @@
+echo "enter file name "
+read i
+ echo " Number of line in" $i "is" 
+wc -l < $i
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+output:
+
+  enter file name 
+factorial.sh
+ Number of line in factorial.sh is
+13
+
