@@ -1,0 +1,18 @@
+
+echo "Current Date and Time: " date
+echo "Username: " whoami
+echo "Current Working Directory: " pwd
+
+
+  -----------------------------------------------------------------
+  output:
+
+  Current Date and Time: 
+Thu Mar  6 11:13:23 AM IST 2025
+Username: 
+mca
+Current Working Directory: 
+/home/mca
+
+  
+ 
