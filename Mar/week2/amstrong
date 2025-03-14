@@ -1,0 +1,44 @@
+#!/bin/bash
+is_armstrong() {
+    num=$1
+    sum=0
+    n=$num
+
+    digits=$(echo -n "$num" | wc -c)
+
+    while [ $num -gt 0 ]; do
+
+        digit=$((num % 10))
+
+
+        sum=$((sum + digit ** digits))
+
+
+        num=$((num / 10))
+    done
+
+
+    if [ $sum -eq $n ]; then
+        echo "$n is an Armstrong number"
+    else
+        echo "$n is not an Armstrong number"
+    fi
+}
+
+
+read -p "Enter a number: " number
+
+
+is_armstrong $number
+
+----------------------------------------------------------------------------------------------
+
+
+output:
+
+
+Enter a number: 154
+154 is not an Armstrong number
+
+                                                             3,1           All
+
