@@ -1,0 +1,7 @@
+echo "Enter 1st file name"
+read a
+
+echo "Enter 2nd file name "
+read b
+
+cp $a $b
