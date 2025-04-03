@@ -1,44 +1,41 @@
- echo "Enter file name: "
-    read file
-
+echo "Enter file name: "
+read file
 
 while true; do
-
     echo "Choose an operation:"
-    echo "1. To delete perticular line"
+    echo "1. To delete a particular line"
     echo "2. To delete the last line"
-    echo "3. To delete line range from x to y"
-    echo "4. To delete all blank line from the file"
+    echo "3. To delete a range of lines from x to y"
+    echo "4. To delete all blank lines from the file"
     echo "5. Exit"
 
-    echo " Enter the choice "
-    read  choice
-
-
+    echo "Enter your choice: "
+    read choice
 
     case $choice in
         1)
-            echo " Enter line number: "
+            echo "Enter line number to delete: "
             read line_number
             sed -i "${line_number}d" "$file"
-            echo" delete " +$line_number+ "  line........"
+            echo "Deleted line number $line_number."
             ;;
         2)
-            sed '$d' "$file"
+            sed -i '$d' "$file"
+            echo "Deleted the last line."
             ;;
         3)
-            echo "Enter starting line numbers: "
+            echo "Enter starting line number: "
             read x
-            echo " Enter ending line number: "
+            echo "Enter ending line number: "
             read y
-
-            sed -i 'x,yd' "$file"
+            sed -i "${x},${y}d" "$file"
+            echo "Deleted lines from $x to $y."
             ;;
         4)
-          
-           sed -i '/^$/d' "$file"
+            sed -i '/^$/d' "$file"
+            echo "Deleted all blank lines."
             ;;
-       5)
+        5)
             echo "Exiting the program."
             exit 0
             ;;
@@ -47,6 +44,65 @@ while true; do
             ;;
     esac
 done
-                                                                                                                                                     49,4          Bot
+
+--------------------------------------------------------------------------------------------------
+
+output
+
+
+Enter file name: 
+file01.sh
+Choose an operation:
+1. To delete a particular line
+2. To delete the last line
+3. To delete a range of lines from x to y
+4. To delete all blank lines from the file
+5. Exit
+Enter your choice: 
+1
+Enter line number to delete: 
+5
+Deleted line number 5.
+Choose an operation:
+1. To delete a particular line
+2. To delete the last line
+3. To delete a range of lines from x to y
+4. To delete all blank lines from the file
+5. Exit
+Enter your choice: 
+2
+Deleted the last line.
+Choose an operation:
+1. To delete a particular line
+2. To delete the last line
+3. To delete a range of lines from x to y
+4. To delete all blank lines from the file
+5. Exit
+Enter your choice: 
+3
+Enter starting line number: 
+21
+Enter ending line number: 
+24
+Deleted lines from 21 to 24.
+Choose an operation:
+1. To delete a particular line
+2. To delete the last line
+3. To delete a range of lines from x to y
+4. To delete all blank lines from the file
+5. Exit
+Enter your choice: 
+4
+Deleted all blank lines.
+Choose an operation:
+1. To delete a particular line
+2. To delete the last line
+3. To delete a range of lines from x to y
+4. To delete all blank lines from the file
+5. Exit
+Enter your choice: 
+5
+Exiting the program.
+
 
 
