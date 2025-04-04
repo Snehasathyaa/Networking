@@ -1,1 +1,17 @@
+echo "Enter the file name:"
+read file
+echo " Enter line number:"
+read line
+
+sed -i "${line}d" "$file"
+
+
+---------------------------------------------------------------------
+
+output:
+
+Enter the file name:
+file01.sh
+ Enter line number:
+24
 
