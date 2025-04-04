@@ -1,1 +1,21 @@
+echo "Enter file name : "
+read file
+
+echo "Enter start line : "
+read s
+
+echo "Enter end line : "
+read e
+
+sed -n "${s},${e}p" "$file"
+
+--------------------------------------------------------------------------
+output
+
+Enter file name : 
+file01.sh
+Enter start line : 
+25
+Enter end line : 
+27
 
