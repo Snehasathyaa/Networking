@@ -1,0 +1,12 @@
+echo " Enter file name : "
+read file
+
+sed -i 's/[0-9]//g' "$file"
+
+--------------------------------------------------------------------------
+
+output:
+ Enter file name : 
+file01.sh
+
+
